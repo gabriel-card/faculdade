@@ -3,17 +3,18 @@ https://github.com/gabriel-card/faculdade/tree/master/trabalhos/dados_sorting_01
 ## Estrutura de Dados
 ### Sorting - Trabalho 01
 
-1. Objetivo do *INSERTION SORT*:
-  1a. Objetivo do *INSERTION SORT*:
-    - Ordernar pequenos números de elementos com eficiência.
+1. Implementação do algoritmo:<br/>
+    - [*INSERTION SORT*](insertion.cpp)<br/>
+2. Objetivo do *INSERTION SORT*:<br/>
+    - Ordernar pequenos números de elementos com eficiência.<br/>
 
-  2b. Complexidade do *INSERTION SORT*:
-    - O(n^2)
+3. Complexidade do *INSERTION SORT*:<br/>
+    - O(n^2)<br/><br/>
 
-2. Qual a diferença entre os algoritmos de sorting: *BUBBLE* e *SELECTION*?
+3. Qual a diferença entre os algoritmos de sorting: *BUBBLE* e *SELECTION*?
   - Não há diferenças significativas na complexidade de ambos algoritmos (se desconsiderar a complexidade de melhor caso), apenas na forma que se ordena os elementos. Enquanto no *BUBBLE* se percorre pelo vetor várias vezes e em cada loop flutuar o maior elemento para o final do array, o *SELECTION* faz o inverso, ou seja, traz o menor elemento para o início.
 
-3. "Chinês" do algoritmo de *INSERTION SORT*:
+4. "Chinês" do algoritmo de *INSERTION SORT*:
 
   ##### x[]: {10, 5, 7, 4, 2}
   x[1] < x[0]
