@@ -2,8 +2,11 @@ https://github.com/gabriel-card/faculdade/tree/master/trabalhos/dados_sorting_02
 
 ## Estrutura de Dados
 ### Sorting - Trabalho 02
-
-1. Complexidade dos Algoritmos:<br/>
+1. Implementação dos algoritmos:<br/>
+    a. [*MERGE SORT*](merge.cpp)<br/>
+    b. [*QUICK SORT*](quick.cpp)<br/>
+    c. [*HANOI*](hanoi.cpp)<br/><br/>
+2. Complexidade dos algoritmos:<br/>
     a. *MERGE SORT*:<br/>
         a1. Pior cenário: O(n logn)<br/>
         a2. Melhor cenário: Variação entre O(n) e O(n logn)<br/>
@@ -14,10 +17,10 @@ https://github.com/gabriel-card/faculdade/tree/master/trabalhos/dados_sorting_02
         a2. Melhor cenário: O(n logn) (partição simples) ou O(n) (partição em 3 vias)<br/>
         a3. Cenário médio: O(n logn)<br/><br/>
 
-2. Quais são as diferenças entre o *MERGE SORT* e o *QUICK SORT*? Cite e explique.
+3. Quais são as diferenças entre o *MERGE SORT* e o *QUICK SORT*? Cite e explique.
     - Ambas utilizam os método 'dividir para conquistar', ou seja, criar sub-arrays e ordená-los separadamente para depois juntá-los em um novamente. Porém, se diferem nas técnicas para aplicar tal método; enquanto o *MERGE SORT* divide o array até existirem apenas sub-arrays de 1 elemento e, depois, reune todos os sub-arrays em um único array enquanto ordena, o *QUICK SORT* assume um *pivot*, reorderna o array onde os numeros menores que o *pivot* se aloquem antes (à esquerda) dele, enquanto os maiores se aloquem após (direita). Após isso, separa-se o array em dois (utilizando o *pivot* como referência de partição) e aplica-se recursivamente as instruções anteriores.
 
-3. Fazer o chinês do algoritmo *QUICK SORT* usando como entrada os números: {10, 7, 5, 8, 4}
+4. Fazer o chinês do algoritmo *QUICK SORT* usando como entrada os números: {10, 7, 5, 8, 4}
 
 ```
 quickSort(x = {10, 7, 5, 8, 4}, inicio = 0, fim = 4)
