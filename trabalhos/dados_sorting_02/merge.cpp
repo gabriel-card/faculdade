@@ -1,4 +1,5 @@
 #include <iostream>
+#define SIZE 5
 using namespace std;
 void printArr(int arr[], int size);
 void splitMerge(int x[], int inicio, int fim, int y[]);
@@ -7,11 +8,11 @@ void copyArr(int x[], int inicio, int fim, int y[]);
 
 int main()
 {
-    int x[5] = {10, 7, 5, 8, 4};
-    int y[5] = {};
+    int x[SIZE] = {10, 7, 5, 8, 4};
+    int y[SIZE] = {};
 
-    splitMerge(x, 0, 5, y);
-    printArr(y, 5);
+    splitMerge(x, 0, SIZE, y);
+    printArr(y, SIZE);
 
     return 0;
 }
