@@ -1,26 +1,24 @@
 #include <iostream>
 using namespace std;
-void printArr(int arr[], int size);
+void hanoi(int n, string inicial, string final, string aux);
 
 int main()
 {
-    int x[5] = {10, 7, 5, 8, 4};
+    int x = 3;
+    hanoi(x, "A", "C", "B");
  
     return 0;
 }
 
-void printArr(int arr[], int size)
+void hanoi(int n, string inicial, string final, string aux)
 {
-    cout << "{";
-    for (int i = 0; i < size; ++i)
+    if (n == 1)
     {
-        if (i == size-1)
-        {
-            cout << arr[i] << "}"<< endl;
-        }
-        else
-        {
-            cout << arr[i] << ", ";
-        }
+        cout << "\nMova o disco 1 do bastao " << inicial << " para o " << final;
+        return;
     }
+    hanoi(n - 1, inicial, aux, final);
+    cout << "\nMova o disco " << n << " do bastao " << inicial << " para o " << final;
+
+    hanoi(n - 1, aux, final, inicial);
 }
